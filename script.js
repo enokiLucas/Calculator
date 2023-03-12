@@ -53,3 +53,10 @@ addButton.addEventListener('click', () => {
 	console.log(res);
 });
 
+/*
+1 capture the value on display
+2 append the operator symbol on the display
+3 accepts the sencond number.
+
+
+*/
