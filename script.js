@@ -25,8 +25,9 @@ const operate = (operation, a, b) => {
 }
 
 //updateDisplay()
+const display = document.querySelector('#display');
 const updateDisplay = (value) => {
-	
+	display.append(value);
 }
 
 //buttons
