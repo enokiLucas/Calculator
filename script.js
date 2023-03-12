@@ -31,16 +31,25 @@ const updateDisplay = (value) => {
 }
 
 //Store the last two number.
-const variables2 = [0,0];
+const saveNumbers = [0,0];
 
 //function for the number-buttons.
 const numberButtons = document.querySelectorAll('.button-number');
 numberButtons.forEach(button => {
 	button.addEventListener('click', () => {
-		const buttonValue = button.textContent;
-		updateDisplay(buttonValue);
-		variables2.unshift(buttonValue);
-		variables2.pop();
-		console.log(variables2);
+		const buttonValueString = button.textContent;
+		const buttonValueNumber = Number(buttonValueString);
+
+		updateDisplay(buttonValueNumber);
+		saveNumbers.unshift(buttonValueNumber);
+		saveNumbers.pop();
 	})
 })
+
+//function for math operators
+const addButton = document.querySelector('#btn-add');
+addButton.addEventListener('click', () => {
+	const res = add(saveNumbers[0], saveNumbers[1]);
+	console.log(res);
+});
+
