@@ -30,11 +30,17 @@ const updateDisplay = (value) => {
 	display.append(value);
 }
 
-//buttons
+//Store the last two number.
+const variables2 = [0,0];
+
+//function for the number-buttons.
 const numberButtons = document.querySelectorAll('.button-number');
 numberButtons.forEach(button => {
 	button.addEventListener('click', () => {
 		const buttonValue = button.textContent;
 		updateDisplay(buttonValue);
+		variables2.unshift(buttonValue);
+		variables2.pop();
+		console.log(variables2);
 	})
 })
