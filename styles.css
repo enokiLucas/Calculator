@@ -1,3 +1,7 @@
 #display {
 	border: 1px solid red;
 }
+
+#display-top {
+	border: 1px solid blue;
+}
