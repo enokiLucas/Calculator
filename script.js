@@ -19,17 +19,21 @@ const divide = (a,b) => {
 	return x;
 }
 
-/*
-//Testing the previous functions.
-console.log(add(3,2));
-console.log(subtract(3,20));
-console.log(multiply(3,2));
-console.log(divide(3,2));
-*/
-
-
+//Use one of the previous functions and 2 values and returns the result.
 const operate = (operation, a, b) => {
 	return operation(a,b);
 }
 
-console.log(operate(add, 2, 3));
+//updateDisplay()
+const updateDisplay = (value) => {
+	
+}
+
+//buttons
+const numberButtons = document.querySelectorAll('.button-number');
+numberButtons.forEach(button => {
+	button.addEventListener('click', () => {
+		const buttonValue = button.textContent;
+		updateDisplay(buttonValue);
+	})
+})
