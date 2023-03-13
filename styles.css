@@ -1,3 +1,8 @@
+#calculator {
+	border: 2px solid black;
+	background-color: rgb(194, 185, 185);
+}
+
 #display {
 	border: 1px solid red;
 	margin-top: 10px;
@@ -5,4 +10,23 @@
 
 #display-top {
 	border: 1px solid blue;
+}
+
+#grid-numbers {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#flexbox-top {
+	display: flex;
+	justify-content: center;
+}
+
+#flexbox-side {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#flexbox-main {
+	display: flex;
 }
