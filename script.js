@@ -57,6 +57,7 @@ numberButtons.forEach(button => {
 })
 
 //function for math operators
+///Add
 const addButton = document.querySelector('#btn-add');
 addButton.addEventListener('click', () => {
 	firstVariable = Number(display.textContent);
@@ -65,6 +66,37 @@ addButton.addEventListener('click', () => {
 	cleanDisplay();
 	operationType = add;
 });
+
+///Subtract
+const subtractButton = document.querySelector('#btn-subtract');
+subtractButton.addEventListener('click', () => {
+	firstVariable = Number(display.textContent);
+	updateDisplay(' - ');
+	updateDisplayTop();
+	cleanDisplay();
+	operationType = subtract;
+});
+
+///Multiply
+const multiplyButton = document.querySelector('#btn-multiply');
+multiplyButton.addEventListener('click', () => {
+	firstVariable = Number(display.textContent);
+	updateDisplay(' * ');
+	updateDisplayTop();
+	cleanDisplay();
+	operationType = multiply;
+});
+
+///Divide
+const divideButton = document.querySelector('#btn-divide');
+divideButton.addEventListener('click', () => {
+	firstVariable = Number(display.textContent);
+	updateDisplay(' / ');
+	updateDisplayTop();
+	cleanDisplay();
+	operationType = divide;
+});
+
 
 const equalButton = document.querySelector('#btn-equal');
 equalButton.addEventListener('click', () => {
@@ -76,13 +108,3 @@ equalButton.addEventListener('click', () => {
 	
 })
 
-/*
-1 capture the value on display
-2 append the operator symbol on the display
-3 accepts the sencond number.
-
-
-const res = add(saveNumbers[0], saveNumbers[1]);
-	console.log(res);
-
-*/
