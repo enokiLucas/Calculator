@@ -30,11 +30,25 @@ const updateDisplay = (value) => {
 	display.append(value);
 }
 
-//updateDisplayTop()
+//cleanDisplay()
+const cleanDisplay = () => {
+	while (display.firstChild) {
+		display.removeChild(display.firstChild);
+	}
+}
+
+//cleanDisplayTop()
 const displayTop = document.querySelector('#display-top');
+const cleanDisplayTop = () => {
+	while (displayTop.firstChild) {
+		displayTop.removeChild(displayTop.firstChild);
+	}
+}
+
+//updateDisplayTop()
 const updateDisplayTop = () => {
 	displayTop.append(display.textContent);
-	display.textContent.remove();
+	cleanDisplay();
 }
 
 //Store the last two number.
@@ -61,6 +75,7 @@ const addButton = document.querySelector('#btn-add');
 addButton.addEventListener('click', () => {
 	firstVariable = Number(display.textContent);
 	updateDisplay(' + ');
+	updateDisplayTop();
 });
 
 const equalButton = document.querySelector('#btn-equal');
