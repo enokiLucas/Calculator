@@ -1,23 +1,8 @@
 //Basic Math Operations
-const add = (a,b) => {
-	const x = a+b;
-	return x;
-}
-
-const subtract = (a,b) => {
-	const x = a-b;
-	return x;
-}
-
-const multiply = (a,b) => {
-	const x = a*b;
-	return x;
-}
-
-const divide = (a,b) => {
-	const x = a/b;
-	return x;
-}
+const add = (a,b) => a+b;
+const subtract = (a,b) => a-b;
+const multiply = (a,b) => a*b;
+const divide = (a,b) => a/b;
 
 //Use one of the previous functions and 2 values and returns the result.
 const operate = (operation, a, b) => {
@@ -55,6 +40,7 @@ const updateDisplayTop = () => {
 const saveNumbers = [0,0];
 let firstVariable = 0;
 let secondVariable = 0;
+let operationType;
 
 
 //function for the number-buttons.
@@ -76,11 +62,18 @@ addButton.addEventListener('click', () => {
 	firstVariable = Number(display.textContent);
 	updateDisplay(' + ');
 	updateDisplayTop();
+	cleanDisplay();
+	operationType = add;
 });
 
 const equalButton = document.querySelector('#btn-equal');
 equalButton.addEventListener('click', () => {
-
+	secondVariable = Number(display.textContent);
+	updateDisplayTop(display.textContent);
+	cleanDisplay();
+	const result = operate(operationType, firstVariable, secondVariable);
+	display.append('= '+result);
+	
 })
 
 /*
