@@ -30,9 +30,17 @@ const updateDisplay = (value) => {
 	display.append(value);
 }
 
+//updateDisplayTop()
+const displayTop = document.querySelector('#display-top');
+const updateDisplayTop = () => {
+	displayTop.append(display.textContent);
+	display.textContent.remove();
+}
+
 //Store the last two number.
 const saveNumbers = [0,0];
 let firstVariable = 0;
+let secondVariable = 0;
 
 
 //function for the number-buttons.
@@ -56,6 +64,9 @@ addButton.addEventListener('click', () => {
 });
 
 const equalButton = document.querySelector('#btn-equal');
+equalButton.addEventListener('click', () => {
+
+})
 
 /*
 1 capture the value on display
