@@ -1,15 +1,23 @@
 #calculator {
 	border: 2px solid black;
 	background-color: rgb(194, 185, 185);
+	height: 350px;
+	width: 200px;
+
 }
 
 #display {
 	border: 1px solid red;
 	margin-top: 10px;
+	width: 180px;
+	height: 50px;
+
 }
 
 #display-top {
 	border: 1px solid blue;
+	width: 180px;
+	height: 20px;
 }
 
 #grid-numbers {
@@ -29,4 +37,5 @@
 
 #flexbox-main {
 	display: flex;
+	justify-content: center;
 }
