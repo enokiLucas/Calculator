@@ -22,12 +22,13 @@
 
 #grid-numbers {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 #flexbox-top {
 	display: flex;
 	justify-content: center;
+	padding: 20px 5px;
 }
 
 #flexbox-side {
