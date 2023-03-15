@@ -38,6 +38,10 @@
 	padding: 20px 5px;
 }
 
+.button-function {
+	flex: 1;
+}
+
 #flexbox-side {
 	display: flex;
 	flex-direction: column-reverse;
