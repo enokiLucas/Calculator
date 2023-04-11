@@ -1,3 +1,9 @@
+#333644 black
+#84577C purple
+#C65F63 red
+#F6E1B8 beige
+
+
 # Calculator
 
 The Odin Project, Foundation Course, Project: Calculator.

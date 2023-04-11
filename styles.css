@@ -1,9 +1,20 @@
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333644;
+	color: #F6E1B8;
+	font-size: larger;
+	font-weight: bolder;
+	font-family: cursive;
+	height: 50px;
+}
+
 #calculator {
 	border: 2px solid black;
 	background-color: rgb(194, 185, 185);
 	height: 350px;
 	width: 200px;
-	padding: auto;
 }
 
 #display-container {
