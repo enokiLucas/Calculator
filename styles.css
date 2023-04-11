@@ -3,7 +3,7 @@
 	background-color: rgb(194, 185, 185);
 	height: 350px;
 	width: 200px;
-
+	padding: auto;
 }
 
 #display-container {
